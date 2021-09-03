@@ -81,20 +81,25 @@ div {
                 color: red;
             }
             #icon-header-bottom {
-                @media (max-width: 1023px) {
-                    flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+
+                @media (max-width: 1023px) and(min-width:740px) {
+                   
                 }
 
                 .bar-btn {
                     @media (min-width: 1024px) {
                         display: none;
                     }
-                    @media (max-width: 1023px) {
+                    @media (max-width: 1023px) and (min-width: 740px) {
                         display: block;
                         margin-left: 20px;
                         margin-top: 10px;
                         font-size: 25px;
-                        z-index: 9999999999;
+                        // z-index: 9999999999;
                     }
                 }
             }
@@ -373,7 +378,7 @@ div {
                 right: 25px;
             }
             @media (max-width: 375px) {
-                width: 337px;
+                width: 311px;
             }
             .title-form {
                 font-weight: 700;
@@ -483,8 +488,11 @@ div {
                             width: 375px;
                             padding-top: 20px;
                         }
+                        @media (max-width: 320px) {
+                            width: 307px;
+                        }
                         @media (max-width: 375px) {
-                            width: 341px;
+                            width: 339px;
                         }
                     }
                 }
@@ -583,8 +591,11 @@ div {
                     @media (min-width: 740px) and(max-width:1023px) {
                         max-width: 336px;
                     }
+                    @media (max-width: 320px) {
+                        max-width: 312px;
+                    }
                     @media (max-width: 375px) {
-                        max-width: 335px;
+                        max-width: 347px;
                     }
                     .img-hover {
                         overflow: hidden;
@@ -775,6 +786,9 @@ div {
                             @media (max-width: 740px) {
                                 width: 420px;
                             }
+                            @media (max-width: 320px) {
+                                width: 301px;
+                            }
                             @media (max-width: 375px) {
                                 width: 341px;
                             }
@@ -861,6 +875,7 @@ div {
                         .img-event {
                             height: 100px;
                             width: 100%;
+                            object-fit: cover;
                             @media (max-width: 740px) {
                                 height: 200px;
                             }
@@ -923,8 +938,11 @@ div {
                     @media (max-width: 740px) {
                         width: 400px;
                     }
-                    @media (max-width: 375px) {
-                        width: 333px;
+                    @media (max-width: 320px) {
+                        width: 270px;
+                    }
+                    @media (max-width: 3750px) {
+                        width: 336px;
                     }
                 }
                 p {
@@ -1108,10 +1126,12 @@ div {
                             width: 66px;
                             @media (min-width: 740px) and(max-width:1023px) {
                                 width: 108px;
-
                             }
-                            @media (max-width: 375px) {
+                            @media (max-width: 740px) {
                                 width: 108px;
+                            }
+                            @media (max-width: 320px) {
+                                width: 95px;
                             }
                         }
                         .img-footer-child {
