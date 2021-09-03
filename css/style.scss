@@ -473,6 +473,10 @@
                         width: auto;
                     }
                     .img-service {
+                        @media (max-width: 740px) {
+                            margin-top: 20px;
+                           
+                        }
                         img:hover {
                             opacity: 0.5;
                         }
@@ -487,7 +491,7 @@
                             }
                             @media (max-width: 740px) {
                                 width: 375px;
-                                padding-top: 20px;
+                               
                             }
                             @media (max-width: 320px) {
                                 width: 307px;
@@ -806,7 +810,7 @@
                                     width: 347px;
                                 }
                                 @media (max-width: 740px) {
-                                    width: 94%;
+                                    width: 100%;
                                 }
                                 @media (max-width: 320px) {
                                     width: 301px;
