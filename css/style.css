@@ -948,6 +948,7 @@ div .gototop:hover {
 
 .counter-content .row {
   padding: 0;
+  width: 100%;
 }
 
 .counter-content .row .col-md-6 {
@@ -998,13 +999,13 @@ div .gototop:hover {
   }
 }
 
-@media (max-width: 1024px) and (min-width: 740px) {
+@media (max-width: 1023px) and (min-width: 740px) {
   .section-news {
     padding: 30px 0px;
   }
 }
 
-@media (max-width: 1024px) and (min-width: 740px) {
+@media (max-width: 1023px) and (min-width: 740px) {
   .section-news .row {
     margin: 0;
     padding: 20px 0px;
@@ -1017,7 +1018,7 @@ div .gototop:hover {
   }
 }
 
-@media (max-width: 1024px) and (min-width: 740px) {
+@media (max-width: 1023px) and (min-width: 740px) {
   .section-news .row .col-lg-8 {
     padding: 0;
   }
@@ -1274,107 +1275,110 @@ div .gototop:hover {
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
-  .footer #footer .col-lg-6 {
+  .footer #footer .col-md-6 {
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
 @media (min-width: 1024px) {
-  .footer #footer .col-lg-6 {
+  .footer #footer .col-md-6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-.footer #footer .col-lg-6 div {
+.footer #footer .col-md-6 div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.footer #footer .col-lg-6 div .logo-footer {
+.footer #footer .col-md-6 div .logo-footer {
   width: 270px;
 }
 
 @media (max-width: 740px) {
-  .footer #footer .col-lg-6 div .logo-footer {
+  .footer #footer .col-md-6 div .logo-footer {
     width: 400px;
   }
 }
 
 @media (max-width: 375px) {
-  .footer #footer .col-lg-6 div .logo-footer {
+  .footer #footer .col-md-6 div .logo-footer {
     width: 333px;
   }
 }
 
-.footer #footer .col-lg-6 div p {
+.footer #footer .col-md-6 div p {
   color: #a4a4a4;
   font-size: 15px;
   margin-bottom: 0.8em;
   padding-top: 22px;
 }
 
-.footer #footer .col-lg-6 div .icon-logo-footer i {
+.footer #footer .col-md-6 div .icon-logo-footer i {
   color: white;
   opacity: 0.7;
   padding-right: 10px;
   font-size: 20px;
 }
 
-.footer #footer .col-lg-6 div .icon-logo-footer i:hover {
+.footer #footer .col-md-6 div .icon-logo-footer i:hover {
   color: #ffb606;
 }
 
-.footer #footer .col-lg-6 #contact {
+.footer #footer .col-md-6 #contact {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child {
+.footer #footer .col-md-6 #contact #contact-child {
   padding: 5px 0 0 20px;
 }
 
 @media (max-width: 740px) {
-  .footer #footer .col-lg-6 #contact #contact-child {
+  .footer #footer .col-md-6 #contact #contact-child {
     padding: 30px 0;
   }
 }
 
-.footer #footer .col-lg-6 #contact #contact-child h5 {
+@media (max-width: 1023px) and (min-width: 740px) {
+  .footer #footer .col-md-6 #contact #contact-child {
+    padding: 35px 0;
+  }
+}
+
+.footer #footer .col-md-6 #contact #contact-child h5 {
   color: white;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child p {
+.footer #footer .col-md-6 #contact #contact-child p {
   font-size: 14px;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child .hollow {
+.footer #footer .col-md-6 #contact #contact-child .hollow {
   background: #ffb606;
   height: 1px;
   width: 40px;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child div i {
+.footer #footer .col-md-6 #contact #contact-child div i {
   color: white;
   padding-right: 17px;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #address {
+.footer #footer .col-md-6 #contact #contact-child #address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 7px;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #address i {
+.footer #footer .col-md-6 #contact #contact-child #address i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1386,23 +1390,23 @@ div .gototop:hover {
           align-items: center;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #telephone {
+.footer #footer .col-md-6 #contact #contact-child #telephone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 7px;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #telephone a {
+.footer #footer .col-md-6 #contact #contact-child #telephone a {
   text-decoration: none;
   color: #a4a4a4;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #telephone a:hover {
+.footer #footer .col-md-6 #contact #contact-child #telephone a:hover {
   color: #ffb606;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #email {
+.footer #footer .col-md-6 #contact #contact-child #email {
   padding-bottom: 7px;
   margin-top: -17px;
   display: -webkit-box;
@@ -1410,16 +1414,16 @@ div .gototop:hover {
   display: flex;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #email a {
+.footer #footer .col-md-6 #contact #contact-child #email a {
   text-decoration: none;
   color: #a4a4a4;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #email a:hover {
+.footer #footer .col-md-6 #contact #contact-child #email a:hover {
   color: #ffb606;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #email i {
+.footer #footer .col-md-6 #contact #contact-child #email i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1431,28 +1435,20 @@ div .gototop:hover {
           align-items: center;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #chat {
+.footer #footer .col-md-6 #contact #contact-child #chat {
   padding-bottom: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #chat a {
+.footer #footer .col-md-6 #contact #contact-child #chat a {
   text-decoration: none;
   color: #a4a4a4;
 }
 
-.footer #footer .col-lg-6 #contact #contact-child #chat a:hover {
+.footer #footer .col-md-6 #contact #contact-child #chat a:hover {
   color: #ffb606;
-}
-
-@media (min-width: 740px) and (max-width: 1023px) {
-  .footer #footer .final-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1481,7 +1477,7 @@ div .gototop:hover {
 
 @media (min-width: 740px) and (max-width: 1023px) {
   .footer #footer .final-footer #link #link-child {
-    padding: 5px 0;
+    padding: 35px 0 0 35px;
   }
 }
 
@@ -1548,6 +1544,12 @@ div .gototop:hover {
   }
 }
 
+@media (min-width: 740px) and (max-width: 1023px) {
+  .footer #footer .final-footer .img .img-child {
+    padding: 35px 0 0 35px;
+  }
+}
+
 .footer #footer .final-footer .img .img-child h5 {
   color: white;
   text-transform: uppercase;
@@ -1565,12 +1567,12 @@ div .gototop:hover {
 }
 
 .footer #footer .final-footer .img .img-child .img-footer img {
-  width: 79px;
+  width: 66px;
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
   .footer #footer .final-footer .img .img-child .img-footer img {
-    width: 112px;
+    width: 108px;
   }
 }
 
