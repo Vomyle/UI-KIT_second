@@ -214,6 +214,14 @@
                                 padding: 15px 0 15px 20px;
                                 border-top: 1px solid #ececec;
                             }
+                            .text-homepage {
+                                color: #ffb606;
+                            }
+                           
+                            span:hover{
+                                color: #ffb606;
+        
+                            }
                         }
                         #icon-header {
                             margin: 0 0 0 20px;
@@ -247,6 +255,10 @@
                         @media (min-width: 740px) and(max-width:1024px) {
                             padding: 0 15px;
                         }
+                    }
+                    span:hover{
+                        color: #ffb606;
+
                     }
                     i {
                         padding: 0 20px;
@@ -458,7 +470,7 @@
             display: flex;
             .row {
                 margin: 0;
-                width: 1192px;
+                width: 1240px;
                 .ti {
                     justify-content: center;
                     display: flex;
@@ -493,11 +505,12 @@
                                 width: 375px;
                                
                             }
-                            @media (max-width: 320px) {
-                                width: 307px;
-                            }
+                            
                             @media (max-width: 375px) {
                                 width: 339px;
+                            }
+                            @media (max-width: 320px) {
+                                width: 307px;
                             }
                         }
                     }
@@ -596,11 +609,12 @@
                         @media (min-width: 740px) and(max-width:1023px) {
                             max-width: 336px;
                         }
-                        @media (max-width: 320px) {
-                            max-width: 312px;
-                        }
+                      
                         @media (max-width: 375px) {
                             max-width: 347px;
+                        }
+                        @media (max-width: 320px) {
+                            max-width: 312px;
                         }
                         .img-hover {
                             overflow: hidden;
@@ -812,11 +826,12 @@
                                 @media (max-width: 740px) {
                                     width: 100%;
                                 }
-                                @media (max-width: 320px) {
-                                    width: 301px;
-                                }
+                                
                                 @media (max-width: 375px) {
                                     width: 341px;
+                                }
+                                @media (max-width: 320px) {
+                                    width: 301px;
                                 }
                                 height: 220px;
                             }
@@ -966,12 +981,13 @@
                         @media (max-width: 740px) {
                             width: 400px;
                         }
+                        @media (max-width: 375px) {
+                            width: 336px;
+                        }
                         @media (max-width: 320px) {
                             width: 270px;
                         }
-                        @media (max-width: 3750px) {
-                            width: 336px;
-                        }
+                        
                     }
                     p {
                         color: #a4a4a4;
@@ -997,11 +1013,12 @@
                     #contact-child {
                         padding: 5px 0 0 20px;
 
-                        @media (max-width: 740px) {
-                            padding: 30px 0;
-                        }
+                       
                         @media (max-width: 1023px) and(min-width:740px) {
                             padding: 35px 0;
+                        }
+                        @media (max-width: 740px) {
+                            padding: 30px 0;
                         }
                         h5 {
                             color: white;
@@ -1076,8 +1093,7 @@
                 }
             }
             .final-footer {
-                @media (min-width: 740px) and(max-width:1023px) {
-                }
+                
                 @media (min-width: 1024px) {
                     display: flex;
                 }
