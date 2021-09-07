@@ -900,7 +900,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .container-fluid .section-room .section-room-child .all-room-type .room .col-lg-4 {
     max-width: 286px;
     margin: 20px 17px;
