@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu - Howello</title>
+    <link rel="stylesheet" href="/css/introduce.css">
+
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/bootstrap-5.1.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick-theme.css" />
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#gototop").hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 100) {
+                    $("#gototop").show("slow")
+                } else {
+                    $("#gototop").hide()
+
+                }
+            })
+            $("#gototop").click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                })
+            })
+
+        })
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 50) {
+                    $("#header-bottom").css({
+                        "top": 0,
+                        "background": "white",
+                        "opacity": 0.9,
+                        "position": "fixed",
+                        "z-index": 1,
+                        "padding-top": 0,
+                        "width": "100%",
+
+                    })
+                } else {
+                    $('#header-bottom').css({
+                        "position": "relative"
+                    });
+                }
+
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        <a href="javascript:;" id="gototop"><i class="gototop fas fa-angle-up"></i> </a>
+    </div>
+    <section class="header">
+        <div id="container">
+            <div id="header-top">
+                <div id="contact-address">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0769220162">076 922 0162</a>
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:demonhunterg@gmail.com">demonhunterg@gmail.com</a>
+                    <!-- mailto: thay cho http -->
+                </div>
+                <div id="icon-header">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-square"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div id="header-bottom">
+                <label id="icon-header-bottom" for="nav-mobile-input"><i
+                        class="bar-btn bar-btn fas fa-bars"></i></label>
+                <input type="checkbox" name="" class="nav-input" id="nav-mobile-input">
+                <img width="250" height="90"
+                    src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/logo.png" class="header_logo"
+                    alt="Howello">
+
+                <nav class="nav__pc">
+                    <span class="text-homepage"><a href="http://127.0.0.1:5502/index.html">Trang chủ</a></span>
+                    <span class="text-introduce">Giới thiệu</span>
+                    <span>Phòng</span>
+                    <span>Tin tức</span>
+                    <span>Liên hệ</span>
+
+                    <i class="search-header fas fa-search">
+
+                        <div id="input-search">
+                            <input type="text" placeholder="tìm kiếm.....">
+
+
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </i>
+
+                    <button id="btn-setroom" class="btn btn-warning">Đặt phòng</button>
+                </nav>
+
+                <nav class="nav__tablet">
+
+                    <div id="nav-tablet">
+                        <div id="input-search">
+                            <div class="input-parent"><input type="text" placeholder="Tìm kiếm....."></div>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="nav-child__tablet">
+                            <span class="text-homepage"><a href="http://127.0.0.1:5502/index.html">Trang chủ</a></span>
+                            <span class="text-introduce">Giới thiệu</span>
+                            <span>Phòng</span>
+                            <span>Tin tức</span>
+                            <span>Liên hệ</span>
+                            <span>Đăng nhập</span>
+                        </div>
+                        <div id="icon-header">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-pinterest-square"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="hollow"></div>
+                <label for="nav-mobile-input" class="nav-overlay">
+                    <i class="close fas fa-times"></i>
+                </label>
+            </div>
+        </div>
+    </section>
+    <section id="img-behind-header">
+        <img
+            src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/Intercontinental-resort-pattaya-desktop-hero-1440x450-jpg-EXPIRY-JAN-2020.jpg">
+        <div class="text-behind-header">
+            <h1>GIỚI THIỆU</h1>
+            <a href="http://127.0.0.1:5502/index.html">TRANG CHỦ</a>
+            <span class="separator">/</span>
+            <span class="text-introduce-behindheader">GIỚI THIỆU</span>
+
+        </div>
+    </section>
+    <section class="introduce-mona">
+        <div class="row">
+            <div class="col-sm-5">
+                <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/img-about.jpg">
+            </div>
+            <div class="col-sm-7">
+                <h2>GIỚI THIỆU <span style="color: #ffb606;">MONA MEDIA RESORT</span></h2>
+                <p>
+                    Bắt đầu hoạt động từ tháng 5 năm 2004, Mona Media Resort, Mũi Né, Phan Thiết tạo nên sự khác biệt
+                    trên nhiều phương diện. Đây là khu nghỉ dưỡng duy nhất tại Việt Nam cung cấp chương trình “Tất cả
+                    trong một”, Tiệc phô mai và rượu đãi khách miễn phí, Các bài hát vui tươi, sôi động do hai ban nhạc
+                    của khu nghỉ dưỡng trình bày và chương trình Dạo bộ Làng Chài và Chợ Mũi Né hàng ngày. Khác với các
+                    khu nghỉ dưỡng khác dọc theo bờ biển Phan Thiết, Mona Media Resort đủ điều kiện để giúp bạn tận
+                    hưởng những phút giây thư giãn thoải mái, lấy lại năng lượng sau khoảng thời gian làm việc vất vả.
+                </p>
+                <p>Mona Media Resort là một bức tranh hoàn mỹ của nghệ thuật kiến trúc và xây dựng. Ngay cạnh bãi biển
+                    là hồ bơi rộng lớn, được bao bọc bởi hàng dừa xanh mượt. Xung quanh các ngôi nhà, biệt thự là khu
+                    vườn nhiệt đới với nhiều loài thảo mộc đặc trưng của khu vực. Văn hóa cổ Champa cũng được thể hiện
+                    trong hầu hết các kiến trúc xây dựng nơi đây, từ các ngôi nhà cho đến khu vực tiền sảnh. Khách check
+                    in sẽ được thưởng thức âm nhạc Champa độc đáo do chính ban nhạc Champa địa phương trình diễn.</p>
+                <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ chuyên
+                    nghiệp của các nhân viên nơi đây.</p>
+                <a class="btn btn-outline-secondary">Liên hệ</a>
+            </div>
+        </div>
+    </section>
+    <section class="service-main">
+        <div>
+            <h2><span style="color: #ffb606;">DỊCH VỤ</span> CHÍNH</h2>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div>
+                        <i class="fas fa-caret-right"></i>
+                        <a>Miễn phí Wifi</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-caret-right"></i>
+                        <a>Spa & Massage</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-caret-right"></i>
+                        <a>Nhà hàng</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-caret-right"></i>
+                        <a>Bar & Gym</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-caret-right"></i>
+                        <a>Hồ bơi ngoài trời</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-caret-right"></i>
+                        <a>Thuê xe hơi</a>
+                    </div>
+                </div>
+                <div class="col-sm-7 slide-service">
+                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room3-1.jpg">
+                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room2-1.jpg">
+                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1-1.jpg">
+                </div>
+            </div>
+        </div>
+        <script>
+
+            $(document).ready(function () {
+                $('.slide-service').slick({
+
+                });
+            })
+        </script>
+    </section>
+    <section>
+        <div class="customer">
+            <div class="customer-child">
+                <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-3-150x150.png">
+                <div>
+                    <i class="fas fa-quote-left"></i>
+                    <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ chuyên
+                        nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện
+                        cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
+                    <h3 style="color: #ffb606;">Khách hàng</h3>
+                </div>
+            </div>
+            <div class="customer-child">
+                <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-2-150x150.png">
+                <div>
+                    <i class="fas fa-quote-left"></i>
+                    <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ chuyên
+                        nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện
+                        cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
+                    <h3 style="color: #ffb606;">Khách hàng</h3>
+                </div>
+            </div>
+            <div class="customer-child">
+                <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-4-150x150.png">
+                <div>
+                    <i class="fas fa-quote-left"></i>
+                    <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ chuyên
+                        nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện
+                        cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
+                    <h3 style="color: #ffb606;">Khách hàng</h3>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            $(document).ready(function () {
+                $('.customer').slick({
+
+                });
+            })
+        </script>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick-1.8.1/slick/slick.min.js"></script>
+
+
+</body>
+
+</html>
