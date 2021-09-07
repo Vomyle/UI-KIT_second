@@ -605,9 +605,13 @@
             .all-room-type {
                 justify-content: center;
                 display: flex;
+                .row{
+                    --bs-gutter-x: 0;
+                }
                 .room {
                     margin: 0;
                     // width: 1192px;
+
                     @media (max-width: 320px) {
                         --bs-gutter-x: 0;
                     }

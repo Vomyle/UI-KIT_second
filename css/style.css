@@ -852,6 +852,10 @@
   display: flex;
 }
 
+.container-fluid .section-room .section-room-child .all-room-type .row {
+  --bs-gutter-x: 0;
+}
+
 .container-fluid .section-room .section-room-child .all-room-type .room {
   margin: 0;
 }
