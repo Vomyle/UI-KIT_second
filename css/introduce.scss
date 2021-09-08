@@ -90,7 +90,7 @@ div {
                     @media (min-width: 1024px) {
                         display: none;
                     }
-                    @media (max-width: 1023px) and (min-width: 740px) {
+                    @media (max-width: 1023px) and (min-width: 730px) {
                         display: block;
                         margin-left: 20px;
                         margin-top: 10px;
@@ -242,7 +242,7 @@ div {
                 margin-right: 76px;
                 align-items: center;
                 position: relative;
-                @media (min-width: 740px) and(max-width:1024px) {
+                @media (min-width: 730px) and(max-width:1024px) {
                     margin-right: 24px;
                 }
                 @media (max-width: 1023px) {
@@ -392,7 +392,7 @@ div {
         padding-bottom: 55px;
         margin: 0;
         .col-sm-5 {
-            @media (min-width: 740px) and(max-width:1023px) {
+            @media (min-width: 730px) and(max-width:1023px) {
                 align-items: center;
                 display: flex;
             }
@@ -402,6 +402,9 @@ div {
             }
         }
         .col-sm-7 {
+            @media(max-width:425px){
+                padding: 20px 30px 0px 30px;
+            }
             padding: 0 30px 30px;
 
             h2 {
@@ -443,7 +446,7 @@ div {
         width: 1220px;
         margin: 0;
         padding-top: 50px;
-        @media (min-width: 740px) and (max-width: 1023px) {
+        @media (min-width: 730px) and (max-width: 1023px) {
             width: 700px;
         }
         @media (max-width: 425px) {
@@ -495,7 +498,7 @@ div {
     padding: 50px 0 0 0;
     .customer {
         width: 1070px;
-        @media (min-width: 740px) and(max-width:1023px) {
+        @media (min-width: 730px) and(max-width:1023px) {
             width: 650px;
         }
         @media (max-width: 425px) {
@@ -527,7 +530,7 @@ div {
         }
         .customer-child {
             display: flex !important;
-            @media (max-width: 740px) {
+            @media (max-width: 730px) {
                 display: block !important;
             }
             .img-customer-child {
@@ -575,7 +578,7 @@ div {
             padding: 65px 0;
         }
         .col-md-6 {
-            @media (min-width: 740px) and(max-width:1023px) {
+            @media (min-width: 730px) and(max-width:1023px) {
                 padding: 0;
             }
             @media (min-width: 1024px) {
@@ -585,7 +588,7 @@ div {
                 flex: 1;
                 .logo-footer {
                     width: 270px;
-                    @media (max-width: 740px) {
+                    @media (max-width: 730px) {
                         width: 400px;
                     }
                     @media (max-width: 375px) {
@@ -619,10 +622,10 @@ div {
                 #contact-child {
                     padding: 5px 0 0 20px;
 
-                    @media (max-width: 1023px) and(min-width:740px) {
+                    @media (max-width: 1023px) and(min-width:730px) {
                         padding: 35px 0;
                     }
-                    @media (max-width: 740px) {
+                    @media (max-width: 730px) {
                         padding: 30px 0;
                     }
                     h5 {
@@ -701,16 +704,16 @@ div {
             @media (min-width: 1024px) {
                 display: flex;
             }
-            @media (min-width: 740px) and(max-width:1023px) {
+            @media (min-width: 730px) and(max-width:1023px) {
                 padding: 0 0 60px 0;
             }
             #link {
                 flex: 1;
                 #link-child {
                     padding: 5px 0 0 20px;
-                    @media (min-width: 740px) and(max-width:1023px) {
+                    @media (min-width: 730px) and(max-width:1023px) {
                     }
-                    @media (max-width: 740px) {
+                    @media (max-width: 730px) {
                         padding: 0;
                         // padding: 35px 0 0 35px;
                     }
@@ -746,15 +749,15 @@ div {
             }
             .img {
                 flex: 1;
-                @media (max-width: 740px) {
+                @media (max-width: 730px) {
                     padding: 30px 0;
                 }
                 .img-child {
                     padding: 5px 0 0 20px;
-                    @media (max-width: 740px) {
+                    @media (max-width: 730px) {
                         padding: 0;
                     }
-                    @media (min-width: 740px) and(max-width:1023px) {
+                    @media (min-width: 730px) and(max-width:1023px) {
                         padding: 35px 0 0 35px;
                     }
                     h5 {
@@ -772,10 +775,10 @@ div {
                         padding-top: 20px;
                         img {
                             width: 66px;
-                            @media (min-width: 740px) and(max-width:1023px) {
+                            @media (min-width: 730px) and(max-width:1023px) {
                                 width: 108px;
                             }
-                            @media (max-width: 740px) {
+                            @media (max-width: 730px) {
                                 width: 108px;
                             }
                             @media (max-width: 320px) {
