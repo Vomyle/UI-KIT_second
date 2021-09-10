@@ -5,6 +5,13 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
+.row {
+    @media(min-width: 1024px){
+    --bs-gutter-x: 2.5em !important;
+
+    }
+    --bs-gutter-x: 0 !important;
+}
 .container-fluid {
     padding: 0;
     div {
@@ -811,6 +818,7 @@
                     }
                 }
                 .row {
+                    --bs-gutter-x: 0 !important;
                     @media (max-width: 1023px) and(min-width:740px) {
                         padding: 0;
                     }
@@ -832,13 +840,17 @@
                         // }
                         .img-hover-news:hover {
                             background-color: #000;
-                            width: auto;
+                            width: 100%;
                         }
                         .img-hover-news {
+                            @media (min-width: 1024px) {
+                                width: 400px !important;
+                            }
                             @media (max-width: 740px) {
                                 justify-content: center;
                                 display: flex;
                             }
+
                             img:hover {
                                 opacity: 0.8;
                             }

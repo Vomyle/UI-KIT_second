@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu - Howello</title>
-    <link rel="stylesheet" href="css/introduce.css">
-
+    <title>Document</title>
     <link rel="stylesheet" href="bootstrap-5.1.0-dist/bootstrap-5.1.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -15,7 +12,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <link rel="stylesheet" href="css/animate.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/rom.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick-theme.css" />
     <script src="js/wow.min.js"></script>
@@ -24,49 +27,51 @@
     </script>
     <script>
         $(document).ready(function () {
-            $("#gototop").hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 50) {
+                    $('#header-bottom').css({
+                        "top": 0,
+                        "background": "white",
+                        "opacity": 0.8,
+                        "position": "fixed",
+                        "z-index": 1,
+                        "padding-top": 0,
+                        "width": "100%",
+
+                    });
+
+                }
+                if ($(this).scrollTop() < 50) {
+                    $('#header-bottom').css({
+                        "position": "relative"
+                    });
+
+                }
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#gototop").hide()
             $(window).scroll(function () {
                 if ($(this).scrollTop() >= 100) {
                     $("#gototop").show("slow")
+
                 } else {
                     $("#gototop").hide()
 
                 }
             })
             $("#gototop").click(function () {
-                $("html, body").animate({
-                    scrollTop: 0
-                })
-            })
-
-        })
-
-    </script>
-    <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() >= 50) {
-                    $("#header-bottom").css({
-                        "top": 0,
-                        "background": "white",
-                        "opacity": 0.9,
-                        "position": "fixed",
-                        "z-index": 1,
-                        "padding-top": 0,
-                        "width": "100%",
-
+                $("html, body").animate(
+                    {
+                        scrollTop: 0
                     })
-                } else {
-                    $('#header-bottom').css({
-                        "position": "relative"
-                    });
-                }
-
             })
         })
     </script>
 </head>
-
 <body>
     <div>
         <a href="javascript:;" id="gototop"><i class="gototop fas fa-angle-up"></i> </a>
@@ -98,11 +103,9 @@
                     alt="Howello">
 
                 <nav class="nav__pc">
-                    <span class="text-homepage"><a href="https://vomyle.github.io/howello.io/index.html">Trang
-                            chủ</a></span>
-                    <span class="text-introduce"><a href="https://vomyle.github.io/howello.io/introduce.html"></a> Giới
-                        thiệu</span>
-                        <span><a href="https://vomyle.github.io/howello.io/room.html">Phòng</a></span>
+                    <span class="text-homepage"><a href="https://vomyle.github.io/howello.io/index.html"></a>Trang chủ</span>
+                    <span><a href="https://vomyle.github.io/howello.io/introduce.html">Giới thiệu</a></span>
+                    <span><a href="https://vomyle.github.io/howello.io/room.html">Phòng</a></span>
                     <span>Tin tức</span>
                     <span>Liên hệ</span>
 
@@ -127,11 +130,9 @@
                             <i class="fas fa-search"></i>
                         </div>
                         <div class="nav-child__tablet">
-                            <span class="text-homepage"><a href="https://vomyle.github.io/howello.io/index.html">Trang
-                                    chủ</a></span>
-                            <span class="text-introduce"><a
-                                    href="https://vomyle.github.io/howello.io/introduce.html"></a>Giới thiệu</span>
-                                    <span><a href="https://vomyle.github.io/howello.io/room.html">Phòng</a></span>
+                            <span class="text-homepage"><a href="https://vomyle.github.io/howello.io/index.html"></a>Trang chủ</span>
+                            <span><a href="https://vomyle.github.io/howello.io/introduce.html">Giới thiệu</a></span>
+                            <span><a href="https://vomyle.github.io/howello.io/room.html">Phòng</a></span>
                             <span>Tin tức</span>
                             <span>Liên hệ</span>
                             <span>Đăng nhập</span>
@@ -154,7 +155,7 @@
     </section>
     <section id="img-behind-header">
         <img
-            src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/Intercontinental-resort-pattaya-desktop-hero-1440x450-jpg-EXPIRY-JAN-2020.jpg">
+            src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/video-bg.png">
         <div class="text-behind-header">
             <h1>GIỚI THIỆU</h1>
             <a href="https://vomyle.github.io/howello.io/index.html">TRANG CHỦ</a>
@@ -163,142 +164,115 @@
 
         </div>
     </section>
-    <section class="introduce-mona">
-        <div class="row">
-            <div class="col-sm-5 wow bounceIn" data-wow-duration="2s">
-                <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/img-about.jpg">
-            </div>
-            <div class="col-sm-7 wow fadeInRight" data-wow-duration="3s" data-wow-delay=".3s">
-                <h2>GIỚI THIỆU <span style="color: #ffb606;">MONA MEDIA RESORT</span></h2>
-                <p>
-                    Bắt đầu hoạt động từ tháng 5 năm 2004, Mona Media Resort, Mũi Né, Phan Thiết tạo nên sự khác biệt
-                    trên nhiều phương diện. Đây là khu nghỉ dưỡng duy nhất tại Việt Nam cung cấp chương trình “Tất cả
-                    trong một”, Tiệc phô mai và rượu đãi khách miễn phí, Các bài hát vui tươi, sôi động do hai ban nhạc
-                    của khu nghỉ dưỡng trình bày và chương trình Dạo bộ Làng Chài và Chợ Mũi Né hàng ngày. Khác với các
-                    khu nghỉ dưỡng khác dọc theo bờ biển Phan Thiết, Mona Media Resort đủ điều kiện để giúp bạn tận
-                    hưởng những phút giây thư giãn thoải mái, lấy lại năng lượng sau khoảng thời gian làm việc vất vả.
-                </p>
-                <p>Mona Media Resort là một bức tranh hoàn mỹ của nghệ thuật kiến trúc và xây dựng. Ngay cạnh bãi biển
-                    là hồ bơi rộng lớn, được bao bọc bởi hàng dừa xanh mượt. Xung quanh các ngôi nhà, biệt thự là khu
-                    vườn nhiệt đới với nhiều loài thảo mộc đặc trưng của khu vực. Văn hóa cổ Champa cũng được thể hiện
-                    trong hầu hết các kiến trúc xây dựng nơi đây, từ các ngôi nhà cho đến khu vực tiền sảnh. Khách check
-                    in sẽ được thưởng thức âm nhạc Champa độc đáo do chính ban nhạc Champa địa phương trình diễn.</p>
-                <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ chuyên
-                    nghiệp của các nhân viên nơi đây.</p>
-                <a class="btn btn-outline-secondary">Liên hệ</a>
-            </div>
-        </div>
-    </section>
-    <section class="service-main">
-        <div>
-            <h2><span style="color: #ffb606;">DỊCH VỤ</span> CHÍNH</h2>
-            <div class="row">
-                <div class="col-sm-5 wow bounceInLeft" data-wow-delay=".1s">
-                    <div>
-                        <i class="fas fa-caret-right"></i>
-                        <a>Miễn phí Wifi</a>
+    <section id="room">
+        <div class="all-room-type">
+            <div class="row room">
+                <div class="col-lg-4 wow flipInY" data-wow-duration="0.5s" data-wow-delay=".5s">
+                    <div class="img-hover">
+                        <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1.jpg" alt="">
                     </div>
-                    <div>
-                        <i class="fas fa-caret-right"></i>
-                        <a>Spa & Massage</a>
-                    </div>
-                    <div>
-                        <i class="fas fa-caret-right"></i>
-                        <a>Nhà hàng</a>
-                    </div>
-                    <div>
-                        <i class="fas fa-caret-right"></i>
-                        <a>Bar & Gym</a>
-                    </div>
-                    <div>
-                        <i class="fas fa-caret-right"></i>
-                        <a>Hồ bơi ngoài trời</a>
-                    </div>
-                    <div>
-                        <i class="fas fa-caret-right"></i>
-                        <a>Thuê xe hơi</a>
+
+                    <h2>SILVER ROOM</h2>
+                    <div class="hollow"></div>
+                    <div class="room">
+                        <h3>
+                            <span>Giá:</span>
+                            <b>50$</b>
+                            <span>/1 đêm</span>
+                        </h3>
+                        <a href="" class="btn btn-warning">Xem Chi Tiết</a>
                     </div>
                 </div>
-                <div class="col-sm-7 slide-service wow bounceIn" data-wow-delay=".2s">
-                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room3-1.jpg">
-                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room2-1.jpg">
-                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1-1.jpg">
-                </div>
-            </div>
-        </div>
-        <script>
-
-            $(document).ready(function () {
-                $('.slide-service').slick({
-
-                });
-            })
-        </script>
-    </section>
-    <section>
-        <div class="container-customer">
-            <div class="customer">
-                <div class="customer-child">
-                    <div class="img-customer-child">
-                        <img
-                            src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-3-150x150.png">
+                <div class="col-lg-4 wow flipInY" data-wow-duration="0.5s" data-wow-delay=".5s">
+                    <div class="img-hover">
+                        <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room2.jpg">
                     </div>
 
-                    <div class="text-customer-child">
-                        <i class="fas fa-quote-left"></i>
-                        <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
-                            chuyên
-                            nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
-                            thiện
-                            cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
-                        <h5 style="color: #ffb606;">Khách hàng</h5>
+                    <h2>PLATINUM ROOM</h2>
+                    <div class="hollow"></div>
+                    <div class="room">
+                        <h3>
+                            <span>Giá:</span>
+                            <b>80$</b>
+                            <span>/1 đêm</span>
+                        </h3>
+                        <a href="" class="btn btn-warning">Xem Chi Tiết</a>
                     </div>
                 </div>
-                <div class="customer-child">
-                    <div class="img-customer-child">
+                <div class="col-lg-4 wow flipInY" data-wow-duration="0.5s" data-wow-delay=".5s">
+                    <div>
+                        <div class="img-hover">
+                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room3.jpg">
+                        </div>
 
-                        <img
-                            src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-2-150x150.png">
-                    </div>
-
-                    <div class="text-customer-child">
-                        <i class="fas fa-quote-left"></i>
-                        <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
-                            chuyên
-                            nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
-                            thiện
-                            cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
-                        <h5 style="color: #ffb606;">Khách hàng</h5>
-                    </div>
-                </div>
-                <div class="customer-child">
-                    <div class="img-customer-child">
-
-                        <img
-                            src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-4-150x150.png">
-                    </div>
-                    <div class="text-customer-child">
-                        <i class="fas fa-quote-left"></i>
-                        <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
-                            chuyên
-                            nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
-                            thiện
-                            cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
-                        <h5 style="color: #ffb606;">Khách hàng</h5>
+                        <h2>BRONZE ROOM</h2>
+                        <div class="hollow"></div>
+                        <div class="room">
+                            <h3>
+                                <span>Giá:</span>
+                                <b>40$</b>
+                                <span>/1 đêm</span>
+                            </h3>
+                            <a href="" class="btn btn-warning">Xem Chi Tiết</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
+        <div class="all-room-type">
+            <div class="row room">
+                <div class="col-lg-4 wow flipInY" data-wow-duration="0.5s" data-wow-delay=".5s">
+                    <div class="img-hover">
+                        <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1.jpg" alt="">
+                    </div>
 
-            $(document).ready(function () {
-                $('.customer').slick({
-                    dots: true,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                });
-            })
-        </script>
+                    <h2>SILVER ROOM</h2>
+                    <div class="hollow"></div>
+                    <div class="room">
+                        <h3>
+                            <span>Giá:</span>
+                            <b>50$</b>
+                            <span>/1 đêm</span>
+                        </h3>
+                        <a href="" class="btn btn-warning">Xem Chi Tiết</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow flipInY" data-wow-duration="0.5s" data-wow-delay=".5s">
+                    <div class="img-hover">
+                        <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room2.jpg">
+                    </div>
+
+                    <h2>PLATINUM ROOM</h2>
+                    <div class="hollow"></div>
+                    <div class="room">
+                        <h3>
+                            <span>Giá:</span>
+                            <b>80$</b>
+                            <span>/1 đêm</span>
+                        </h3>
+                        <a href="" class="btn btn-warning">Xem Chi Tiết</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow flipInY" data-wow-duration="0.5s" data-wow-delay=".5s">
+                    <div>
+                        <div class="img-hover">
+                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room3.jpg">
+                        </div>
+
+                        <h2>BRONZE ROOM</h2>
+                        <div class="hollow"></div>
+                        <div class="room">
+                            <h3>
+                                <span>Giá:</span>
+                                <b>40$</b>
+                                <span>/1 đêm</span>
+                            </h3>
+                            <a href="" class="btn btn-warning">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="footer">
         <div class="row" id="footer">
@@ -399,8 +373,5 @@
 
         </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="slick/slick-1.8.1/slick/slick.min.js"></script>
 </body>
-
 </html>
