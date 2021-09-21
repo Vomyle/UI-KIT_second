@@ -75,10 +75,10 @@
             #header-bottom {
                 display: flex;
                 padding-top: 20px;
-                // position: fixed;
+                padding: 0 78px;
                 .header_logo {
                     flex: 1;
-                    margin-left: 76px;
+                
                     @media (max-width: 1024px) {
                         margin-left: 0;
                     }
@@ -245,7 +245,6 @@
                     flex: 2;
                     justify-content: flex-end;
                     display: flex;
-                    margin-right: 76px;
                     align-items: center;
                     position: relative;
                     @media (min-width: 740px) and(max-width:1024px) {
@@ -830,7 +829,7 @@
                         padding: 0 10px;
                     }
                     .col-md-6 {
-                        padding: 0;
+                        padding: 0 12px;
                         @media (max-width: 1023px) and(min-width:740px) {
                             padding: 0 20px;
                         }
@@ -843,9 +842,9 @@
                             width: 100%;
                         }
                         .img-hover-news {
-                            @media (min-width: 1024px) {
-                                width: 400px !important;
-                            }
+                            // @media (min-width: 1024px) {
+                            //     width: 400px !important;
+                            // }
                             @media (max-width: 740px) {
                                 justify-content: center;
                                 display: flex;
@@ -855,19 +854,20 @@
                                 opacity: 0.8;
                             }
                             .img-news {
-                                @media (min-width: 1024px) {
-                                    width: 400px;
-                                }
-                                @media (max-width: 1023px) and(min-width:740px) {
-                                    width: 347px;
-                                }
-                                @media (max-width: 740px) {
-                                    width: 100%;
-                                }
+                                // @media (min-width: 1024px) {
+                                //     width: 400px;
+                                // }
+                                // @media (max-width: 1023px) and(min-width:740px) {
+                                //     width: 347px;
+                                // }
+                                // @media (max-width: 740px) {
+                                //     width: 100%;
+                                // }
 
-                                @media (max-width: 375px) {
-                                    width: 341px;
-                                }
+                                // @media (max-width: 375px) {
+                                //     width: 341px;
+                                // }
+                                width: 100%;
                                 @media (max-width: 320px) {
                                     width: 301px;
                                 }

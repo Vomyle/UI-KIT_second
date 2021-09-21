@@ -83,13 +83,13 @@ div .gototop:hover {
   display: -ms-flexbox;
   display: flex;
   padding-top: 20px;
+  margin: 0 78px;
 }
 
 .header #container #header-bottom .header_logo {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 76px;
 }
 
 @media (max-width: 1024px) {
@@ -128,7 +128,7 @@ div .gototop:hover {
   }
 }
 
-@media (max-width: 1023px) and (min-width: 730px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   .header #container #header-bottom #icon-header-bottom .bar-btn {
     display: block;
     margin-left: 20px;
@@ -322,7 +322,6 @@ div .gototop:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 76px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -365,7 +364,7 @@ div .gototop:hover {
   color: #ffb606 !important;
 }
 
-.header #container #header-bottom .nav__pc .text-introduce {
+.header #container #header-bottom .nav__pc .text-room {
   color: #ffb606;
 }
 
@@ -515,11 +514,7 @@ div .gototop:hover {
   color: #969494;
 }
 
-#room {
-  background: #f7f3f3;
-}
-
-#room .all-room-type {
+.all-room-type {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -527,30 +522,30 @@ div .gototop:hover {
   display: -ms-flexbox;
   display: flex;
   padding-top: 40px;
+  background: #f7f3f3;
 }
 
-#room .all-room-type .row {
+.all-room-type .row {
   --bs-gutter-x: 0;
 }
 
-#room .all-room-type .room {
+.all-room-type .roomall {
   margin: 0;
 }
 
 @media (max-width: 320px) {
-  #room .all-room-type .room {
+  .all-room-type .roomall {
     --bs-gutter-x: 0;
   }
 }
 
-@media (min-width: 740px) and (max-width: 1023px) {
-  #room .all-room-type .room {
-    padding: 10px;
+@media (min-width: 740px) and (max-width: 1024px) {
+  .all-room-type .roomall {
     margin: 0;
   }
 }
 
-#room .all-room-type .room .col-lg-4 {
+.all-room-type .roomall .col-lg-4 {
   background: white;
   width: 375px;
   margin: 0 19px;
@@ -558,83 +553,83 @@ div .gototop:hover {
   margin-bottom: 51px;
 }
 
-@media (min-width: 740px) and (max-width: 1023px) {
-  #room .all-room-type .room .col-lg-4 {
-    max-width: 336px;
+@media (min-width: 740px) and (max-width: 1024px) {
+  .all-room-type .roomall .col-lg-4 {
+    width: 303px;
   }
 }
 
 @media (max-width: 415px) {
-  #room .all-room-type .room .col-lg-4 {
+  .all-room-type .roomall .col-lg-4 {
     max-width: 378px;
   }
 }
 
 @media (max-width: 375px) {
-  #room .all-room-type .room .col-lg-4 {
+  .all-room-type .roomall .col-lg-4 {
     max-width: 347px;
     margin: 0 14px;
   }
 }
 
 @media (max-width: 360px) {
-  #room .all-room-type .room .col-lg-4 {
+  .all-room-type .roomall .col-lg-4 {
     max-width: 332px;
     margin: 10px 14px;
   }
 }
 
 @media (max-width: 320px) {
-  #room .all-room-type .room .col-lg-4 {
+  .all-room-type .roomall .col-lg-4 {
     max-width: 286px;
     margin: 20px 17px;
   }
 }
 
-#room .all-room-type .room .col-lg-4 .img-hover {
+.all-room-type .roomall .col-lg-4 .img-hover {
   overflow: hidden;
 }
 
-#room .all-room-type .room .col-lg-4 .img-hover img {
+.all-room-type .roomall .col-lg-4 .img-hover img {
   width: 100%;
 }
 
-#room .all-room-type .room .col-lg-4 .img-hover img:hover {
+.all-room-type .roomall .col-lg-4 .img-hover img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   overflow: hidden;
 }
 
-#room .all-room-type .room .col-lg-4 h2 {
+.all-room-type .roomall .col-lg-4 h2 {
   font-size: 28px;
   font-weight: 700;
   padding: 30px 0 0 20px;
 }
 
-#room .all-room-type .room .col-lg-4 .hollow {
+.all-room-type .roomall .col-lg-4 .hollow {
   height: 1px;
   background: #ece9e9;
   width: 86px;
   margin: 17px 0 0 30px;
 }
 
-#room .all-room-type .room .col-lg-4 .room {
+.all-room-type .roomall .col-lg-4 .room {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 25px 0 37px 30px;
 }
 
-#room .all-room-type .room .col-lg-4 .room h3 {
+.all-room-type .roomall .col-lg-4 .room h3 {
   font-size: 19px;
 }
 
-#room .all-room-type .room .col-lg-4 .room h3 span {
+.all-room-type .roomall .col-lg-4 .room h3 span {
   font-size: 20px;
   color: #a8a6a6;
 }
 
-#room .all-room-type .room .col-lg-4 .room a {
+.all-room-type .roomall .col-lg-4 .room a {
   color: white;
   font-weight: 600;
   height: 44px;
@@ -653,16 +648,20 @@ div .gototop:hover {
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
-  #room .all-room-type .room .col-lg-4 .room a {
+  .all-room-type .roomall .col-lg-4 .room a {
     margin-left: 20px;
   }
 }
 
 @media (max-width: 320px) {
-  #room .all-room-type .room .col-lg-4 .room a {
+  .all-room-type .roomall .col-lg-4 .room a {
     margin-left: -3px;
     width: 129px;
   }
+}
+
+.footer .row {
+  --bs-gutter-x: 0;
 }
 
 .footer #footer {
@@ -679,11 +678,11 @@ div .gototop:hover {
 
 @media (max-width: 740px) {
   .footer #footer {
-    padding: 65px 0;
+    padding: 65px 0 0 10px;
   }
 }
 
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 730px) and (max-width: 1023px) {
   .footer #footer .col-md-6 {
     padding: 0;
   }
@@ -707,7 +706,7 @@ div .gototop:hover {
   width: 270px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 730px) {
   .footer #footer .col-md-6 div .logo-footer {
     width: 400px;
   }
@@ -753,13 +752,13 @@ div .gototop:hover {
   padding: 5px 0 0 20px;
 }
 
-@media (max-width: 1023px) and (min-width: 740px) {
+@media (max-width: 1023px) and (min-width: 730px) {
   .footer #footer .col-md-6 #contact #contact-child {
     padding: 35px 0;
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 730px) {
   .footer #footer .col-md-6 #contact #contact-child {
     padding: 30px 0;
   }
@@ -874,7 +873,7 @@ div .gototop:hover {
   }
 }
 
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 730px) and (max-width: 1023px) {
   .footer #footer .final-footer {
     padding: 0 0 60px 0;
   }
@@ -890,7 +889,7 @@ div .gototop:hover {
   padding: 5px 0 0 20px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 730px) {
   .footer #footer .final-footer #link #link-child {
     padding: 0;
   }
@@ -937,7 +936,7 @@ div .gototop:hover {
           flex: 1;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 730px) {
   .footer #footer .final-footer .img {
     padding: 30px 0;
   }
@@ -947,13 +946,13 @@ div .gototop:hover {
   padding: 5px 0 0 20px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 730px) {
   .footer #footer .final-footer .img .img-child {
     padding: 0;
   }
 }
 
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 730px) and (max-width: 1023px) {
   .footer #footer .final-footer .img .img-child {
     padding: 35px 0 0 35px;
   }
@@ -979,13 +978,13 @@ div .gototop:hover {
   width: 66px;
 }
 
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 730px) and (max-width: 1023px) {
   .footer #footer .final-footer .img .img-child .img-footer img {
     width: 108px;
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 730px) {
   .footer #footer .final-footer .img .img-child .img-footer img {
     width: 108px;
   }
