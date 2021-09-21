@@ -88,6 +88,12 @@ div .gototop:hover {
   padding: 5px 20px 5px;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .header #container #header-bottom {
+    margin: 0;
+  }
+}
+
 .header #container #header-bottom .header_logo {
   -webkit-box-flex: 1;
       -ms-flex: 1;
