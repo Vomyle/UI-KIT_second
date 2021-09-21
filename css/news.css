@@ -487,6 +487,18 @@ div .gototop:hover {
   padding-bottom: 30px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-news {
+    margin: 0 25px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .section-news {
+    margin: 0 25px;
+  }
+}
+
 .section-news h5 {
   padding: 10px 5px 10px 5px;
   line-height: 1.2;
@@ -494,15 +506,24 @@ div .gototop:hover {
   height: 47px;
 }
 
+.section-news h4 {
+  text-align: center;
+  font-size: 1.15em;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
 .section-news div .section__news__child {
   padding: 15px 0;
 }
 
-.section-news div .row .col-lg-3 {
-  border-right: 1px solid #e4e1e1;
+@media (min-width: 1024px) {
+  .section-news div .row .col-lg-3 {
+    border-right: 1px solid #e4e1e1;
+  }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .section-news div .row .col-lg-3 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -518,9 +539,7 @@ div .gototop:hover {
 .section-news div .row .col-lg-3 #input__search {
   position: relative;
   background: white;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
 }
 
 .section-news div .row .col-lg-3 #input__search i {
@@ -609,12 +628,32 @@ div .gototop:hover {
   border: none;
 }
 
-.section-news div .row .col-lg-9 .row {
-  margin-bottom: 24px;
+@media (min-width: 320px) and (max-width: 480px) {
+  .section-news div .row .col-lg-9 .col-lg-9__childsecond {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-news div .row .col-lg-9 .row {
+    margin-bottom: 24px;
+  }
 }
 
 .section-news div .row .col-lg-9 .row .col-lg-4 {
   position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-news div .row .col-lg-9 .row .col-lg-4 {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .section-news div .row .col-lg-9 .row .col-lg-4 {
+    padding-bottom: 20px;
+  }
 }
 
 .section-news div .row .col-lg-9 .row .col-lg-4 .col-lg-4-child:hover {
@@ -630,6 +669,12 @@ div .gototop:hover {
 .section-news div .row .col-lg-9 .row .col-lg-4 .col-lg-4-child img {
   width: 100%;
   height: 150px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-news div .row .col-lg-9 .row .col-lg-4 .col-lg-4-child img {
+    height: 200px;
+  }
 }
 
 .section-news div .row .col-lg-9 .row .col-lg-4 .col-lg-4-child .hollow {
