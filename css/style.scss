@@ -78,7 +78,8 @@
                 padding: 0 78px;
                 .header_logo {
                     flex: 1;
-                
+                    max-height: 90px;
+                    width: 100%;
                     @media (max-width: 1024px) {
                         margin-left: 0;
                     }
