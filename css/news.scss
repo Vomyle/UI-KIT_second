@@ -65,9 +65,10 @@ div {
         #header-bottom {
             display: flex;
             padding: 20px;
-            margin: 0 55px;
-            @media (min-width: 320px) and (max-width: 480px) {
-                margin: 0;
+            padding: 0 20px;
+
+            @media(min-width: 1024px){
+            padding: 0 78px;
             }
             padding: 5px 20px 5px;
             .header_logo {

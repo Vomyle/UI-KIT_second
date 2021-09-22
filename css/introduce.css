@@ -83,7 +83,13 @@ div .gototop:hover {
   display: -ms-flexbox;
   display: flex;
   padding-top: 20px;
-  margin: 0 78px;
+  padding: 0 20px;
+}
+
+@media (min-width: 1024px) {
+  .header #container #header-bottom {
+    padding: 0 78px;
+  }
 }
 
 .header #container #header-bottom .header_logo {
