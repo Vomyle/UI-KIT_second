@@ -714,6 +714,16 @@
   width: auto;
 }
 
+.container-fluid #section-service #all .row .ti img:hover .img-service {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container-fluid #section-service #all .row .ti .img-service {
+  width: 100%;
+}
+
 @media (max-width: 740px) {
   .container-fluid #section-service #all .row .ti .img-service {
     margin-top: 20px;
@@ -725,6 +735,8 @@
 }
 
 .container-fluid #section-service #all .row .ti .img-service img {
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
 }
 
@@ -931,6 +943,10 @@
 
 .container-fluid .section-room .section-room-child .all-room-type .room .col-lg-4 .img-hover img {
   width: 100%;
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container-fluid .section-room .section-room-child .all-room-type .room .col-lg-4 .img-hover img:hover {

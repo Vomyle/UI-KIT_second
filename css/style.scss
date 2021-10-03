@@ -5,6 +5,7 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
+
 .row {
     @media(min-width: 1024px){
     --bs-gutter-x: 2.5em !important;
@@ -502,14 +503,23 @@
                         background-color: #000;
                         width: auto;
                     }
+                    img:hover .img-service {
+                        width: 100%;
+                        object-fit: cover;
+                    }
                     .img-service {
+                        width: 100%;
                         @media (max-width: 740px) {
                             margin-top: 20px;
                         }
                         img:hover {
                             opacity: 0.5;
+                
                         }
-                        img {
+                       
+                        img{
+                        //   height: 300px;
+                            object-fit: cover;
                             @media (min-width: 1024px) {
                                 width: 100%;
                             }
@@ -652,7 +662,9 @@
                             img {
                                 // transition: 0.5s all ease-in-out;
                                 width: 100%;
-                                // overflow: hidden;
+                                width: 100%;
+                                max-height: 300px;
+                                object-fit: cover;
                             }
 
                             img:hover {

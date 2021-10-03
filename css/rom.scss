@@ -411,6 +411,9 @@ div {
             margin: 0 19px;
             padding: 0;
             margin-bottom: 51px;
+            @media (min-width: 1024px) {
+                max-width: 378px;
+            }
             @media (min-width: 740px) and (max-width:1024px) {
                width: 303px;
             }
@@ -434,7 +437,9 @@ div {
                 img {
                     // transition: 0.5s all ease-in-out;
                     width: 100%;
-                    // overflow: hidden;
+                    width: 100%;
+                    height: 350px;
+                    object-fit: cover;
                 }
 
                 img:hover {
