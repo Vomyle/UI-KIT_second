@@ -76,7 +76,10 @@
             #header-bottom {
                 display: flex;
                 padding-top: 20px;
-                padding: 0 78px;
+                @media (min-width: 1024px) {
+                    padding: 0 78px;
+                }
+               
                 .header_logo {
                     flex: 1;
                     max-height: 90px;
@@ -487,6 +490,7 @@
             .row {
                 margin: 0;
                 width: 1240px;
+                text-align: center;
                 @media (max-width: 320px) {
                     --bs-gutter-x: 0;
                 }

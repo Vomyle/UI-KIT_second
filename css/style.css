@@ -101,7 +101,12 @@
   display: -ms-flexbox;
   display: flex;
   padding-top: 20px;
-  padding: 0 78px;
+}
+
+@media (min-width: 1024px) {
+  .container-fluid .header #container #header-bottom {
+    padding: 0 78px;
+  }
 }
 
 .container-fluid .header #container #header-bottom .header_logo {
@@ -691,6 +696,7 @@
 .container-fluid #section-service #all .row {
   margin: 0;
   width: 1240px;
+  text-align: center;
 }
 
 @media (max-width: 320px) {
